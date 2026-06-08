@@ -232,7 +232,7 @@ int dlg_certificate(const char *title, struct StringArray *carr, bool allow_alwa
     // Try to catch dialog keys before ops
     if (menu_dialog_dokey(menu, &op) != 0)
     {
-      event = km_dokey(MdDialog, GETCH_IGNORE_MACRO);
+      event = km_dokey(MdGeneric, GETCH_IGNORE_MACRO);
       op = event.op;
     }
 
